@@ -4,84 +4,165 @@
     <title>
         Home Page 
     </title>
-    
+    <link rel="stylesheet" href="/CSS/home.css">
 </head>
 
-<header>
-    <table width = "100%" border = "0">
-        <tr>
-            <th><a href="Home Page.html">Logo</a></th>
-            <th><a href="Movies Page.html">Movies</a></th>
-            <th><a href="Sign Up page.html">Sign Up</a></th>
-            <th><a href="Login Page.html">Login</a></th>
-            <th><a href="Watchlist.html">Watchlist</a></th>
-            <th><a href="Contact Page.html">Contact Us</a></th>
-        </tr>
-    </table>
-    <table width = "100%" border="1"><tr></tr></table>
-    <br>
-</header>
+
 
 <body>
-<table width="100%" border="0" >
 
-    <tr>
-        <td align="center">
-            <h1>Watch Movies According to Your Taste</h1>
-        </td>
-    </tr>
-    <tr>
-        <td align="center"> 
-            <img src="../Resources/Images/Ethio_fam_movie.jpg" alt="Difret Movie Poster" width="70%">
-        </td>
-    </tr>
-    <tr>
-        <td align="center">
-            <h1>Here is what you can do.</h1>
-    
-            <table width = "100%" border="0">
-                <tr align="center">
-                    <td>Get movies according to your prefences.</td>
-                </tr> 
-                <tr align="center">
-                    <td>Get notified when your prefered movie is in the cinemas.</td> 
-                </tr> 
-                <tr align="center"> 
-                    <td>Watch short trailers.</td>
-                </tr> 
-                <tr align="center">
-                    <td>Classify movies according to their genre, date of publication or ratings.</td>
-                </tr>
-                <tr align="center">
-                    <td>Put your favourite movies in your very own watchlist.</td>
-                </tr>
+<!---------------------------------Header Begins-------------------------------------->
+    <header>
+        <div id="logo">
+            <img src="/Resources/Images/Mock Images/logo.jpg" alt="logo">
+        </div>
+        <div id="Search_Bar">
+            <form action="">
+                <input type="text" name="search" placeholder="Search...">
+                <!-- Svg code for search bar logo -->
+                <a class="search-path">
+                    <svg class="svg-icon search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">A magnifying glass icon.</desc><g class="search-path" fill="none" stroke="#637074"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+                </a>
+            </form>
+        </div>
+        <div id="links">
+            <a href="#">Sign up</a>
+            <a href="#">Login</a>
+        </div>
+    </header>
+<!---------------------------------Header Ends----------------------------------------->
+
+<!---------------------------------Waves  Begin---------------------------------------->
+
+<div class="header">
+
+    <div class="inner-header flex">
+        <!--Logo-->
+        <svg version="1.1" class="logo" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" xml:space="preserve">
+            <path fill="#FFFFFF" stroke="#000000" stroke-width="10" stroke-miterlimit="10" d="M57,283" />
+            <g><path fill="#fff"
+            d="M250.4,0.8C112.7,0.8,1,112.4,1,250.2c0,137.7,111.7,249.4,249.4,249.4c137.7,0,249.4-111.7,249.4-249.4
+            C499.8,112.4,388.1,0.8,250.4,0.8z M383.8,326.3c-62,0-101.4-14.1-117.6-46.3c-17.1-34.1-2.3-75.4,13.2-104.1
+            c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3,62.4c-19.8,19.1-51.6,26.9-100.2,24.6l1.8-39.7		c35.9,1.6,59.7-2.9,70.8-13.6c8.9-8.6,11.1-22.9,13.5-39.6c6.3-42,14.8-99.4,141.4-99.4h41L333,166c-12.6,16-45.4,68.2-31.2,96.2	c9.2,18.3,41.5,25.6,91.2,24.2l1.1,39.8C390.5,326.2,387.1,326.3,383.8,326.3z" />
+            </g>
+        </svg>
+        <h1>Eyita.com</h1>
+    </div>
+
+    <!--Waves Container-->
+    <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(221,4,38,0.7" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(195,66,63,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(221,4,38,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(221,4,38,1)" />
+            </g>
+        </svg>
+    </div>
+    <!--Waves end-->
+
+</div>
+
+
+
+<!---------------------------------Waves  End---------------------------------------->
+    <div class="heading"> 
+        <h1>Watch Movies According to Your Taste</h1>
+    </div>
+<!---------------------------------First Container Element-------------------------------------->
+ 
+    <div class="first-box"><!--Holds the slider and the news feed elements-->
+
+<!-- -------------------------------Image Slider------------------------------------ -->
+
+        <div class="slider-frame">
+            <div class="slide-images">
+                <div class="img-container">
+                    <img src="/Resources/Images/Mock Images/Difret_movie.jpg">
+                </div>
+                <div class="img-container">
+                    <img src="/Resources/Images/Mock Images/Spiderman.jpg">
+                </div>
+                <div class="img-container">
+                    <img src="/Resources/Images/Mock Images/fightclub.jpeg">
+                </div>
+            </div>             
+        </div>
+
+<!-- -------------------------------Image Slider Ends-------------------------------------->     
+        <div class="partition">
+        </div>
+
+<!---------------------------------News Feed Frame Begins-------------------------------------->
+
+        <div id="news-feed-frame">
+
+            <div class="news-container">
+                <img src="/Resources/Images/Mock Images/Difret_movie.jpg" alt="">
+                <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+            <div class="news-container">
+                <img src="/Resources/Images/Mock Images/Spiderman.jpg" alt="">
+                <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    
+                </p>
+            </div>
+            <div class="news-container">
+                <img src="/Resources/Images/Mock Images/fightclub.jpeg" alt="">
+                <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 
-            </table>
-        </td>
-    </tr>
+                </p>
+            </div>
+            <div class="news-container">
+                <img src="/Resources/Images/Mock Images/fightclub.jpeg" alt="">
+                <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                
+                </p>
+            </div>
+            <div class="news-container">
+                <img src="/Resources/Images/Mock Images/fightclub.jpeg" alt="">
+                <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                
+                </p>
+            </div>
 
-</table>
-<br>
-<br>
+        </div>
+
+<!---------------------------------News Feed Frame Ends-------------------------------------->
+
+    </div>
+<!---------------------------------First Container Ends-------------------------------------->
+
+    <h2>Here is what you can do.</h2>
+                
+        
+    
+
+
 
 </body>
 
 
 <footer>
-    <table width = " 100%" border="0">
-        <tr align="center">
-            <td colspan="4"> 
-                Contact us
-            </td>
-        </tr>
+        
+<a href=""><img src="../Resources/Images/Facebook logo.png" alt="Facebook logo" width="30px"></a>
+<a href=""><img src="../Resources/Images/Instagram_logo.png" alt="Facebook logo" width="30px"></a>
+<a href=""><img src="../Resources/Images/Telegram logo.png" alt="Facebook logo" width="30px"></a>
+<a href=""><img src="../Resources/Images/Email logo.png" alt="Facebook logo" width="30px"></a>
+        
 
-        <tr align="center">
-            <td><a href=""><img src="../Resources/Images/Facebook logo.png" alt="Facebook logo" width="30px"></a></td>
-            <td><a href=""><img src="../Resources/Images/Instagram_logo.png" alt="Facebook logo" width="30px"></a></td>
-            <td><a href=""><img src="../Resources/Images/Telegram logo.png" alt="Facebook logo" width="30px"></a></td>
-            <td><a href=""><img src="../Resources/Images/Email logo.png" alt="Facebook logo" width="30px"></a></td>
-        </tr>
-    </table>
 </footer>
 
 </html>
