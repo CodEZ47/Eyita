@@ -1,74 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-    <title>
-        Home Page 
-    </title>
-    
+  <meta charset="UTF-8">
+  <title>Sign up / Login Form</title>
+  <link rel="stylesheet" href="./style.css">
+
 </head>
-
-<header>
-    <table width = "100%" border = "0">
-        <tr>
-            <th><a href="Home Page.html">Logo</a></th>
-            <th><a href="Movies Page.html">Movies</a></th>
-            <th><a href="Sign Up page.html">Sign Up</a></th>
-            <th><a href="Login Page.html">Login</a></th>
-            <th><a href="Watchlist.html">Watchlist</a></th>
-            <th><a href="Contact Page.html">Contact Us</a></th>
-        </tr>
-    </table>
-    <table width = "100%" border="1"><tr></tr></table>
-    <br>
-</header>
-
 <body>
-    <center>
-		<table>
-			<tr>
-				<td><img src = "../Resources/Images/Ethio_fam_movie.jpg" alt = "Logo" width = "100%"></td>
-			</tr>
-		</table>
-		<p><b><u>Log in</u></b></p>
-	</center>
-	<center>
-		<table>
-			<tr>
-				<td>User Name: </td>
-				<td><input type = "text" placeholder = "User Name" name = " "></td>
-			</tr>
-			<tr>
-				<td>Password: </td>
-				<td> <input type = "Password" placeholder = "password" name = " "></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td><a href = "forgot password.html">Forgot password?</a>
-			<tr>
-				<td><input type = "Submit" name = "Submit" value = "Login"></td>
-			</tr>
-			
-		</table>
-		<p>Doesn't have an account yet? <a href = "Sign up page.html">Sign in</a>
-	</center>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign up login form</title>
+	<link rel="stylesheet" type="text/css" href="slide navbar style.css">
+
+</head>
+<body>
+	<div class="main">  <!--the whoole body --> 	
+		<input type="checkbox" id="chk" aria-hidden="true"> <!--the checker place for login -->
+
+			<div class="signup"> <!--the signup layout -->
+				<form>
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<input type="text" name="txt" placeholder="User name" required="">
+					<input type="email" name="email" placeholder="Email" required="">
+					<input type="password" name="pswd" placeholder="Password" required="">
+					<button>Sign up</button>
+				</form>
+                                        <button>Sign up with Google</button>  <!--social media buttons -->
+                                        <button>Sign up with Facebook</button>
+			</div>
+
+			<div class="login">  <!--the layout of the login part -->
+				<form>
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="email" name="email" placeholder="Email" required="">
+					<input type="password" name="pswd" placeholder="Password" required="">
+					<button>Login</button>
+
+                                        
+                                        
+				</form>
+                                       <a href="#" <u>forgot </u> <u>password?</u> </a>  <!--forgot password link in the login layout -->
+			</div>
+	</div>
 </body>
-
-
-<footer>
-    <table width = " 100%" border="0">
-        <tr align="center">
-            <td colspan="4"> 
-                Contact us
-            </td>
-        </tr>
-
-        <tr align="center">
-            <td><a href=""><img src="../Resources/Images/Facebook logo.png" alt="Facebook logo" width="30px"></a></td>
-            <td><a href=""><img src="../Resources/Images/Instagram_logo.png" alt="Facebook logo" width="30px"></a></td>
-            <td><a href=""><img src="../Resources/Images/Telegram logo.png" alt="Facebook logo" width="30px"></a></td>
-            <td><a href=""><img src="../Resources/Images/Email logo.png" alt="Facebook logo" width="30px"></a></td>
-        </tr>
-    </table>
-</footer>
-
+</html>
+<!-- partial -->
+  
+</body>
 </html>
