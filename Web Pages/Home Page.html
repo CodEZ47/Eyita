@@ -5,6 +5,7 @@
         Home Page 
     </title>
     <link rel="stylesheet" href="/CSS/home.css">
+    <link rel="stylesheet" href="/CSS/main.css">
 </head>
 
 
@@ -12,33 +13,28 @@
 <body>
 
 <!---------------------------------Header Begins-------------------------------------->
-    <header>
-        <div id="logo">
-            <img src="/Resources/Images/Mock Images/logo.jpg" alt="logo">
-        </div>
-        <div id="Search_Bar">
-            <form action="">
-                <input type="text" name="search" placeholder="Search...">
-                <!-- Svg code for search bar logo -->
-                <a class="search-path">
-                    <svg class="svg-icon search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">A magnifying glass icon.</desc><g class="search-path" fill="none" stroke="#637074"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
-                </a>
-            </form>
-        </div>
-        <div id="links">
-            <a href="#">Sign up</a>
-            <a href="#">Login</a>
-        </div>
-    </header>
+<header>
+    <ul class="menu">
+        <li class="logo"><a href="#">Animation Coding
+          </a></li>
+        <li class="item"><a href="#">Home</a></li>
+        <li class="item"><a href="#">About</a></li>
+        <li class="item"><a href="#">Services</a></li>
+        </li>
+        <li class="item button"><a href="#">Log In</a></li>
+        <li class="item button signup"><a href="#">Sign Up</a></li>
+        <li class="toggle"><span class="bars"></span></li>
+    </ul>
+</header>
 <!---------------------------------Header Ends----------------------------------------->
 
 <!---------------------------------Waves  Begin---------------------------------------->
 
-<div class="header">
+<div class="front-page">
 
     <div class="inner-header flex">
         <!--Logo-->
-        <svg version="1.1" class="logo" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+        <svg version="1.1" class="front-logo" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" xml:space="preserve">
             <path fill="#FFFFFF" stroke="#000000" stroke-width="10" stroke-miterlimit="10" d="M57,283" />
             <g><path fill="#fff"
@@ -145,26 +141,51 @@
     </div>
 <!---------------------------------First Container Ends-------------------------------------->
 
-    <h2>Here is what you can do.</h2>
-                
-        
-    
+<!---------------------------------Footer---------------------------------------------------->                       
+<footer class="footer">
+    <div class="l-footer">
+        <h1><img src="https://i.postimg.cc/y62wcLBq/logo.png" alt=""></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam atque recusandae in sit sunt molestiae aliquid fugit. Mollitia eaque tempore iure sit nobis? Vitae nemo, optio maiores numquam quis recusandae.</p>
+    </div>
+    <ul class="r-footer">
+        <li>
+            <h2>Social</h2>
+            <ul class="box">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Telegram</a></li>
+            </ul>
+        </li>
+        <li class="features">
+            <h2>Links</h2>
+            <ul class="box h-box">
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Watchlist</a></li>
+                <li><a href="#">Customer Service</a></li>
+            </ul>
+        </li>
+        <li>
+            <h2>Legal</h2>
+            <ul class="box">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Contract</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="b-footer">
+        <p>All rights reserved by ©Eyita 2021 </p>
+    </div>
+</footer>
+<!---------------------------------Footer----------------------------------------------------> 
 
-
+<!--Script-->
+<script src="/Script/headerScript.js"></script>
+<!--Script-->
 
 </body>
-
-
-<footer>
-        
-<a href=""><img src="../Resources/Images/Facebook logo.png" alt="Facebook logo" width="30px"></a>
-<a href=""><img src="../Resources/Images/Instagram_logo.png" alt="Facebook logo" width="30px"></a>
-<a href=""><img src="../Resources/Images/Telegram logo.png" alt="Facebook logo" width="30px"></a>
-<a href=""><img src="../Resources/Images/Email logo.png" alt="Facebook logo" width="30px"></a>
-        
-
-</footer>
-
 </html>
     
 
