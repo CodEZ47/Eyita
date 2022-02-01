@@ -8,137 +8,16 @@
 }
 @import url(//fonts.googleapis.com/css?family=Lato:300:400);
 
-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(8,9,10,1);
-    width: 100%;
-    margin: 0 auto 0 auto;
-    height: 90px;
-    box-shadow: rgba(221,4,38, 1) 0px 2px 1px, rgba(221,4,38, 1) 0px 4px 2px, rgba(221,4,38, 1) 0px 8px 4px, rgba(221,4,38, 1) 0px 16px 8px, rgba(221,4,38, 1) 0px 32px 16px;
-}
-
-header #logo{
-    float: left;
-    padding: 10px;
-}
-
-header #logo img{
-    height: 75px;
-    border-radius: 50%;
-}
-
-header #Search_Bar{
-
-    margin-left: 200px;
-    flex: 2;
-}
-
-header #links{
-
-    flex: 1.5;
-    margin-left: 100px;
-}
-
-header #links a{
-    color: rgba(195,66,63, 1);
-    text-decoration: none;
-    font-size: 20px;
-    padding: 20px;
-    font-family: sans-serif;
-}
-
-header #links a:hover{
-    box-shadow: rgba(221,4,38, 1) 0px 1px 1px, rgba(221,4,38, 1) 0px 2px 2px, rgba(221,4,38, 1) 0px 4px 4px;
-    color: rgba(221,4,38, 1);
-    padding: 20px;
-    border-radius: 30%;
-    transition: 1s;
-}
-
-header #Search_Bar form
-{
-    float: right;
-}
-
-header #Search_Bar input[type = "text"]{
-    width: 150px;
-    height: 40px;
-    background-color: rgba(247,247,242, 1);
-    border: none;
-    border-radius: 5px;
-    margin-bottom: -10px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-}
-
-header #Search_Bar input[type = "text"]:focus{
-    width: 360px;
-    transition: .8s;
-    background-color: #cdd4d4;
-}
-
-header #Search_Bar input[type = "text"]::-webkit-input-placeholder{
-    color: grey;
-    font-family: sans-serif;
-    font-size: 15px;
-    font-style: italic;
-}
-
-header #Search_Bar button{
-    background-color: white;
-    color: #333;
-    width: 70px;
-    height: 45px;
-    border: none;
-    border-radius: 5px;
-    position: relative;
-    overflow: visible;
-    text-transform: uppercase;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-}
-
-.svg-icon.search-icon {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-}
-.search-path :focus{
-    stroke: rgba(195,66,63,1);
-}
-.search-path :hover{
-    stroke: rgba(195,66,63,1);
-} 
-.search-path :active{
-    stroke: rgba(221,4,38);
-    stroke-width: 2px;
-} 
-/* header #Search_Bar button:focus{
-    box-shadow: rgba(221,4,38, 1) 0px 1px 1px, rgba(221,4,38, 1) 0px 2px 2px, rgba(221,4,38, 1) 0px 4px 4px;
-    color: rgba(221,4,38, 1);
-    border-radius: 5px;
-    transition: 1s;
-} */
-/* -------------------------------------------------------Main Body Formatting---------------------------------------------------------- */
-body
-{
-    padding: 0;
-    margin: 0;
-    background-color: rgba(8,9,10,1);
-}
-
-
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* --------------------------------------------------------Waves-------------------------------------------------------------- */
 
-.header {
+.front-page {
   position:relative;
   text-align:center;
   background: linear-gradient(60deg, rgba(8,9,10,1) 80%, rgba(8,9,10,1) 20%);
   color:rgb(247,247,242);
 }
-.logo {
+.front-logo {
   width:50px;
   fill:white;
   padding-right:15px;
@@ -227,16 +106,17 @@ body
 }
 .first-box
 {
+    border: solid 2px white;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     
 }
 
 .partition
 {
-    border-left: 4px solid rgba(221,4,38, 1);
-    border-radius: 100%;
+    border: 4px solid rgba(221,4,38, 1);
+    border-radius: 50%;
     height: 400px;
     align-self: center;
 }
@@ -247,15 +127,18 @@ body
 
 .slider-frame img
 {
-    width: 800px;
-    height: 500px;
+    width: 700px;
+    height: 600px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .slider-frame
 {
-    border-radius: 5%;
+    border-radius: 2%;
+    border: solid 2px white;
     overflow: hidden;
     width: 800px;
-    height: 500px;
+    height: 600px;
     margin-top: 40px;
     margin-bottom: 20px;
     margin-left: 40px;
@@ -263,7 +146,7 @@ body
 
     
 }
-/* /--------------------------------------------Slider Animation-------------------------/ */
+
 @-webkit-keyframes slider_animation
 {
     0%{right: 0px;}
@@ -301,7 +184,6 @@ body
 
 .slider-frame:hover 
 {
-    box-shadow: rgba(221,4,38, 1) 0px 1px 1px, rgba(221,4,38, 1) 0px 2px 2px, rgba(221,4,38, 1) 0px 4px 4px, rgba(221,4,38, 1) 0px 8px 8px, rgba(221,4,38, 1) 0px 16px 16px;
     color: rgba(221,4,38, 1);
     border-radius: 5px;
     transition: 2s;
@@ -321,11 +203,12 @@ body
 {
     display: grid;
     grid-template-columns: "news-feed news-feed news-feed news-feed";
-    width: 400px;
+    width: 300px;
     height: 500px;
     margin: 40px 20px 40px 350px;
     overflow: auto;
-    border: solid white 2px;
+    /* border: solid white 2px; */
+    border-radius: 1%;
 }
 
 .news-container img
