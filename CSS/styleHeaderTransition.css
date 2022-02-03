@@ -34,12 +34,13 @@ header{
 .nav .logo{
     font-size: 3.5rem;
     font-weight: bold;
+    margin-left: 10%;
 }
 
 .nav-list{
     list-style: none;
     display: flex;
-    margin-right: 8rem;
+    margin-right: 12%;
 }
 
 .nav-link{
@@ -101,9 +102,10 @@ header{
 
 
 
-@media (max-width: 500px){
+@media (max-width: 720px){
     #toggle{
         display: flex;
+        margin-right: 30px;
     }
     .nav-list{
         display: none;
@@ -111,6 +113,7 @@ header{
     .nav{
         flex-direction: column;
         align-items: flex-start;
+        margin-top: 20px;
     }
     .nav-list{
         flex-direction: column;
@@ -119,11 +122,15 @@ header{
     }
 
     .nav-list li{
-        margin-bottom: 10px;
+        height: 40px;
     }
 
     .nav-list.active{
         display: flex;
+    }
+
+    .nav-link:hover::after{
+        transform: scaleY(2);
     }
 
     .nav-link{
