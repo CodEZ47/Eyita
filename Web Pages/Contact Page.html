@@ -2,89 +2,105 @@
 <html lang="en">
 <head>
     <title>
-        Eyita - Contact Page
+        Home Page 
     </title>
-    <meta charset="UTF-8">
-    <meta name="description" content="Eyita Movies site contact page">
-    <meta name="keywords" content="Eyita movies site habesha contact us page">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactStyle.css">
+    <!-- <link rel="stylesheet" href="styleHeaderTransition.css"> -->
+    <!-- <link rel="stylesheet" href="styleHeader.css"> -->
+    <link rel="stylesheet" href="main.css">
+
+
 </head>
 
-<header>
-    <table width = "100%" border = "0">
-        <tr>
-            <th align = "left"><a href="Home Page.html"><img src="../Resources/Images/Eyita-logo.png" alt="Eyita.com logo" width="80px"></a></th>
-            <th><a href="Movies Page.html">Movies</a></th>
-            <th><a href="Sign Up page.html">Sign Up</a></th>
-            <th><a href="Login Page.html">Login</a></th>
-            <th><a href="Watchlist.html">Watchlist</a></th>
-            <th><a href="Contact Page.html">Contact Us</a></th>
-        </tr>
-    </table>
-    <hr>
-    <br>
-</header>
-
-<body>    
-
-    <table width = "100%" border="0" cellpadding = "20">
-        <tr align="center">
-            <td colspan="3">
-                <h1>What can we help you with today?<br>
-                Get in touch and let us know how we can help.</h1>
-            </td>
-        </tr>
-        <tr>
-            <td width = "10%"></td>
-            <td width = "45%"> 
-                <form>
-                    <label for="Fname">Full Name:</label><br>
-                    <input type="text" placeholder="Full Name" id="Fname"><br>
-                    <label for="Lname">Last Name:</label><br>
-                    <input type="text" placeholder="Last Name" id="Lname"><br>
-                    <label for="Email"> Email Address:</label><br>
-                    <input type="mail" placeholder="Email Address" id="Email"><br>
-                    <label for="num"> Phone Number:</label><br>
-                    <input type="tell" placeholder="+251*********" id="num"><br>
-                    <label for="feed">What do you need help with? <br> (Use less than 300 characters) </label><br>
-                    <textarea rows="2" cols="25" maxlength="300" placeholder="This is the default text" id="feed"></textarea><br>
-                    <input type="submit">
-
-                  </form>
-            </td>
-            <td align="center" width = "45%"> 
-                <h2>What will happen after I fill out this form?</h2><br> <br>
-                
-                <p><i> We aren't going to spam you or call you <br>multiple 
-                times. Once you fill out this <br>form one of our 
-                customer service team member will reach out 
-                to you and <br>help with what you are facing.</i></p> 
-            </td>
-        </tr>
-        <tr>
-            <td colspan="3"></td>
-        </tr>
-    </table>
-
-</body>
+    <body>
+        <!---------------------------------Header Begins-------------------------------------->
+        <header>
+            <ul class="menu">
+                <li class="logo"><a href="#">Animation Coding
+                </a></li>
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item"><a href="#">About</a></li>
+                <li class="item"><a href="#">Services</a></li>
+                </li>
+                <li class="item button"><a href="#">Log In</a></li>
+                <li class="item button signup"><a href="#">Sign Up</a></li>
+                <li class="toggle"><span class="bars"></span></li>
+            </ul>
+        </header>
+        <!---------------------------------Header Ends----------------------------------------->
 
 
-<footer>
-    <hr>
-    <table width = " 100%" border="0">
-        <tr align="center">
-            <td colspan="4"> 
-                Contact us
-            </td>
-        </tr>
+            <!--Waves end-->
 
-        <tr align="center">
-            <td><a href=""><img src="../Resources/Images/Facebook logo.png" alt="Facebook logo" width="30px"></a></td>
-            <td><a href=""><img src="../Resources/Images/Instagram_logo.png" alt="Facebook logo" width="30px"></a></td>
-            <td><a href=""><img src="../Resources/Images/Telegram logo.png" alt="Facebook logo" width="30px"></a></td>
-            <td><a href=""><img src="../Resources/Images/Email logo.png" alt="Facebook logo" width="30px"></a></td>
-        </tr>
-    </table>
-</footer>
+        </div>
+            <div class="wrapper">
+                <h3> GET IN TOUCH </h3>
+                <div class="contact-us">
+                    <div class="contact">
+                        <form>
+                            <label for="Fname" class='labels'>Full Name:</label><br>
+                            <input type="text" placeholder="Full Name" id="Fname"><br>
+                            <label for="Lname" class='labels'>Last Name:</label><br>
+                            <input type="text" placeholder="Last Name" id="Lname"><br>
+                            <label for="Email" class='labels'> Email Address:</label><br>
+                            <input type="mail" placeholder="Email Address" id="Email"><br>
+                            <label for="feed" class='labels'>What do you need help with? <br> (Use less than 300 characters) </label><br>
+                            <textarea rows="2" cols="25" maxlength="300" placeholder="This is the default text" id="feed"></textarea><br>
+                            <input type="submit" class="item button signup submit-btn">
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <h2>What will happen after I fill out this form?</h2>
+                        <p><i> We aren't going to spam you or call you <br>multiple 
+                        times. Once you fill out this <br>form one of our 
+                        customer service team member will reach out 
+                        to you and <br>help with what you are facing.</i></p> 
+                    </div>
+                </div>
+            </div>
+
+        <!---------------------------------First Container Ends-------------------------------------->
+
+        <!---------------------------------Footer---------------------------------------------------->                       
+        <footer class="footer">
+            <div class="l-footer">
+                <h1><img src="https://i.postimg.cc/y62wcLBq/logo.png" alt=""></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam atque recusandae in sit sunt molestiae aliquid fugit. Mollitia eaque tempore iure sit nobis? Vitae nemo, optio maiores numquam quis recusandae.</p>
+            </div>
+            <ul class="r-footer">
+                <li>
+                    <h2>Social</h2>
+                    <ul class="box">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Telegram</a></li>
+                    </ul>
+                </li>
+                <li class="features">
+                    <h2>Links</h2>
+                    <ul class="box h-box">
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Watchlist</a></li>
+                        <li><a href="#">Customer Service</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Legal</h2>
+                    <ul class="box">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Contract</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="b-footer">
+                <p>All rights reserved by ©Eyita 2021 </p>
+            </div>
+        </footer>
+        <!---------------------------------Footer----------------------------------------------------> 
+
+    </body>
 
 </html>
