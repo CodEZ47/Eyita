@@ -1,22 +1,23 @@
-body {
+/* body {
     background-color: rgb(15, 3, 3);
     color: white;
-}
+} */
 .container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 70%;
     margin: 0 auto;
+    color: white;
 }
 
 .movie-card {
     display: flex;
-    margin-top: 20px;
-    border-radius:1px, solid, white;
-    background-color:rgb(55, 39, 31);
+    margin-top: 50px;
+    border: 1px, solid, white;
+    border-radius:3px, solid, white;
+    /* background-color:rgb(187, 121, 121, 0.3); */
     border-radius: 3%;
-    
 }
 
 .movie-desc {
@@ -25,10 +26,12 @@ body {
 
 #watchlist_title {
     margin: 0 auto;
-    color:rgb(157, 70, 70)
+    margin-top: 40px;
+    color:rgb(255, 255, 255);
 }
+
 .movie-desc a, .movie-desc strong {
-    color: rgb(162, 3, 3);
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
@@ -38,16 +41,19 @@ background-size:contain;
 } */
 
 .movie-descriptions {
+    /* margin-top: 10px; */
     display: -webkit-box;
     /* max-width: 200px; */
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    color: rgb(204, 248, 240)
 }
 
 .movie-descriptions:hover {
     all: initial;
     color: white;
+    margin-top: 10px;
     animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
