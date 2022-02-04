@@ -10,6 +10,10 @@
     margin: 0 auto;
     color: white;
 }
+/* .movie_banner {
+    width: 60px;
+    height: 40px;
+} */
 
 .movie-card {
     display: flex;
@@ -26,13 +30,16 @@
 
 #watchlist_title {
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 100px;
     color:rgb(255, 255, 255);
 }
 
 .movie-desc a, .movie-desc strong {
     color: rgb(255, 255, 255);
     text-decoration: none;
+}
+.nav {
+    background-color: black;
 }
 
 /* .movie_banner {
@@ -59,17 +66,17 @@ background-size:contain;
     animation-fill-mode: forwards;
 }
 
-/* #movie-banner {
+.movie-banner {
     position: absolute;
     display: block;
     background: url(http://www.slatecube.com/images/play-btn.png);
-    height: 100%;
-    width: 100%;
+    /* height: 100%; */
+    width: 60px;
     top: 75px;
     left: 150px;
     background-size: 50px 50px;
     background-repeat: no-repeat;
-} */
+}
 
 @keyframes fadeInAnimation {
     0% {
