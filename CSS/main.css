@@ -10,6 +10,12 @@
 @import url(//fonts.googleapis.com/css?family=Lato:300:400);
 
 
+/* *{
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+} */
+
+
 header{
   width: 100%;
   position: fixed;
@@ -17,15 +23,13 @@ header{
   left: 0;
   transition: background-color .5s ease;
   z-index: 1000;
-  font-family: 'Roboto', sans-serif;
-  font-size: 10px;
 }
 
 .nav{
   width: 100%;
   margin: 0 auto;
   padding: 0 1.5rem;
-  min-height: 10rem;
+  min-height: 6rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36,18 +40,22 @@ header{
 .nav a{
   text-decoration: none;
   color: #fff;
-  font-size: 1.6rem;
+  font-size: 18px;
 }
 
 .nav .logo{
-  font-size: 3.5rem;
-  font-weight: bold;
+  margin-left: 10%;
+}
+
+.nav .logo img{
+  max-width: 60px;
+  max-height: 60px;
 }
 
 .nav-list{
   list-style: none;
   display: flex;
-  margin-right: 8rem;
+  margin-right: 12%;
 }
 
 .nav-link{
@@ -87,7 +95,7 @@ header{
 }
 
 .scrolling-active .nav{
-  min-height: 6.6rem;
+  min-height: 5rem;
 }
 
 .scrolling-active .nav a{
@@ -109,16 +117,18 @@ header{
 
 
 
-@media (max-width: 500px){
+@media (max-width: 720px){
   #toggle{
       display: flex;
+      margin-right: 30px;
   }
   .nav-list{
       display: none;
   }
   .nav{
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
+      margin-top: 20px;
   }
   .nav-list{
       flex-direction: column;
@@ -127,19 +137,27 @@ header{
   }
 
   .nav-list li{
-      margin-bottom: 10px;
+      height: 40px;
   }
 
   .nav-list.active{
       display: flex;
   }
 
+  .nav-link:hover::after{
+      transform: scaleY(2);
+  }
+
   .nav-link{
       padding: .5rem 1rem;
   }
 
+  .nav .logo img{
+      margin-right: 400px;
+      margin-top: -3px;
+  }
+
 }
-  
   
 /*----------------------------------------------------------------Header Ends------------------------------------------------------------*/
 
