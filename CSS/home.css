@@ -12,7 +12,7 @@
 }
 .front-paral{
   /* The image used */
-  background-image: url("../Resources/Bg/Home\ Page\ Background.jpg");
+  background-image: url("../Resources/Images/Bg/Home\ Page\ Background.jpg");
 
   /* Set a specific height */
   min-height: 500px;
@@ -130,7 +130,7 @@
 }
 .slider-paral{
   /* The image used */
-  background-image: url("../Resources/Bg/Home-Page-Playlist-bg.jpg");
+  background-image: url("../Resources/Images/Bg/Home-Page-Playlist-bg.jpg");
 
   /* Set a specific height */
   min-height: 500px;
