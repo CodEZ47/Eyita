@@ -124,13 +124,13 @@
 /* /--------------------------------------------Slider Animation Starts-----------------------------------/ */
 * {box-sizing:border-box}
 #slider-body{
-  height: 1000px;
+  height: 1500px;
   padding-top: 100px;
   padding-bottom: 100px;
 }
 .slider-paral{
   /* The image used */
-  background-image: url("../Resources/Images/Bg/Home-Page-Playlist-bg.jpg");
+  background-image: url("../Resources/Images/Bg/2-28515_black-and-red-wallpapers-hd-cool-backgrounds-red.jpg");
 
   /* Set a specific height */
   min-height: 500px;
