@@ -12,42 +12,42 @@
 
 <body>
 
-<!---------------------------------Header Begins-------------------------------------->
-<header>
-    <ul class="menu">
-        <li class="logo"><a href="#">Animation Coding
-          </a></li>
-        <li class="item"><a href="#">Home</a></li>
-        <li class="item"><a href="#">About</a></li>
-        <li class="item"><a href="#">Services</a></li>
-        </li>
-        <li class="item button"><a href="#">Log In</a></li>
-        <li class="item button signup"><a href="#">Sign Up</a></li>
-        <li class="toggle"><span class="bars"></span></li>
-    </ul>
-</header>
-<!---------------------------------Header Ends----------------------------------------->
+
+        <!---------------------------------Header Begins-------------------------------------->
+       <header>
+            <nav class="nav">
+                <a href="index.html" class="logo">Logo</a>
+                <ul class="nav-list">
+                    
+                    <li class="nav-link"><a href="Home Page.html">Home</a></li>
+                    <li class="nav-link"><a href="MoviePage.html">Movies</a></li>
+                    <li class="nav-link"><a href="Watchlist.html">Watchlist</a></li>
+                    <li class="nav-link"><a href="Contact Page.html">Contact Us</a></li>
+                    <li class="nav-link"><a href="Login Page.html">Log In </a></li>
+                    
+                </ul>
+    
+                <span id="toggle"><img src="../Resources/Images/icons/toggle.png"></span>
+            </nav>
+        </header>
+        <!---------------------------------Header Ends----------------------------------------->
 
 <!---------------------------------Waves  Begin---------------------------------------->
 
-<div class="front-page">
+<div class="front-page front-paral">
 
     <div class="inner-header flex">
-        <!--Logo-->
-        <svg version="1.1" class="front-logo" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" xml:space="preserve">
-            <path fill="#FFFFFF" stroke="#000000" stroke-width="10" stroke-miterlimit="10" d="M57,283" />
-            <g><path fill="#fff"
-            d="M250.4,0.8C112.7,0.8,1,112.4,1,250.2c0,137.7,111.7,249.4,249.4,249.4c137.7,0,249.4-111.7,249.4-249.4
-            C499.8,112.4,388.1,0.8,250.4,0.8z M383.8,326.3c-62,0-101.4-14.1-117.6-46.3c-17.1-34.1-2.3-75.4,13.2-104.1
-            c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3,62.4c-19.8,19.1-51.6,26.9-100.2,24.6l1.8-39.7		c35.9,1.6,59.7-2.9,70.8-13.6c8.9-8.6,11.1-22.9,13.5-39.6c6.3-42,14.8-99.4,141.4-99.4h41L333,166c-12.6,16-45.4,68.2-31.2,96.2	c9.2,18.3,41.5,25.6,91.2,24.2l1.1,39.8C390.5,326.2,387.1,326.3,383.8,326.3z" />
-            </g>
-        </svg>
-        <h1>Eyita.com</h1>
+        <div class="front-head-bg">
+            
+        <h1><pre>Eyita.com 
+THE HOME OF MOVIES
+                    </pre></h1>
+        </div>
+
     </div>
 
     <!--Waves Container-->
-    <div>
+    <div class="waves-container">
         <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
         viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
             <defs>
@@ -68,78 +68,212 @@
 
 
 <!---------------------------------Waves  End---------------------------------------->
+ 
+<div class="slider-paral" id="slider-body"> 
     <div class="heading"> 
         <h1>Watch Movies According to Your Taste</h1>
     </div>
-<!---------------------------------First Container Element-------------------------------------->
- 
-    <div class="first-box"><!--Holds the slider and the news feed elements-->
 
 <!-- -------------------------------Image Slider------------------------------------ -->
 
-        <div class="slider-frame">
-            <div class="slide-images">
-                <div class="img-container">
-                    <img src="/Resources/Images/Mock Images/Difret_movie.jpg">
-                </div>
-                <div class="img-container">
-                    <img src="/Resources/Images/Mock Images/Spiderman.jpg">
-                </div>
-                <div class="img-container">
-                    <img src="/Resources/Images/Mock Images/fightclub.jpeg">
-                </div>
-            </div>             
+             <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="mySlides-inner-frame">
+                <div class="numbertext">1 / 5</div>
+                <img src="../Resources/Images/MoviesList/batman1.jpeg">
+                <div class="text">Caption Text</div>
+            </div>    
+        </div>
+    
+        <div class="mySlides fade">
+            <div class="mySlides-inner-frame">
+                <div class="numbertext">1 / 5</div>
+                <img src="../Resources/Images/MoviesList/dune.jpeg">
+                <div class="text">Caption Text</div>
+            </div>    
+        </div>
+    
+        <div class="mySlides fade">
+            <div class="mySlides-inner-frame">
+                <div class="numbertext">1 / 5</div>
+                <img src="../Resources/Images/MoviesList/starwar.jpeg">
+                <div class="text">Caption Text</div>
+            </div>    
         </div>
 
+        <div class="mySlides fade">
+            <div class="mySlides-inner-frame">
+                <div class="numbertext">1 / 5</div>
+                <img src="../Resources/Images/MoviesList/interstellar.jpg">
+                <div class="text">Caption Text</div>
+            </div>    
+        </div>
+
+        <div class="mySlides fade">
+            <div class="mySlides-inner-frame">
+                <div class="numbertext">1 / 5</div>
+                <img src="../Resources/Images/MoviesList/inception.jpeg">
+                <div class="text">Caption Text</div>
+            </div>    
+        </div>
+    
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+</div> 
 <!-- -------------------------------Image Slider Ends-------------------------------------->     
-        <div class="partition">
+
+
+<!-- -------------------------------Movie List----------------------------------------->     
+
+<div id ="movie-list-container" class="movie-list-paral">
+    <h1>Find all your favourite movies</h1>
+
+    <!--Class One-->
+    <div class="wrapper">
+        
+        <h1>Action</h1>
+        <div class="vl">
+        <div class="card">
+            <img src="../Resources/Images/MoviesList/dune.jpeg">
+            <div class="info">
+                <h1>Dune (2021)</h1>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Quod perspiciatis expedita error! Repellendus animi quod est accusamus 
+                    laborum optio quaerat repudiandae harum, libero voluptas dolores iure 
+                    accusantium distinctio sequi doloribus.
+                </p>
+                <a href="#" class="btn">Explore</a>
+            </div>
         </div>
 
-<!---------------------------------News Feed Frame Begins-------------------------------------->
-
-        <div id="news-feed-frame">
-
-            <div class="news-container">
-                <img src="/Resources/Images/Mock Images/Difret_movie.jpg" alt="">
+        <div class="card">
+            <img src="../Resources/Images/MoviesList/batman1.jpeg">
+            <div class="info">
+                <h1>The Batman (2022)</h1>
                 <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Quod perspiciatis expedita error! Repellendus animi quod est accusamus 
+                    laborum optio quaerat repudiandae harum, libero voluptas dolores iure 
+                    accusantium distinctio sequi doloribus.
                 </p>
+                <a href="#" class="btn">Explore</a>
             </div>
-            <div class="news-container">
-                <img src="/Resources/Images/Mock Images/Spiderman.jpg" alt="">
-                <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    
-                </p>
-            </div>
-            <div class="news-container">
-                <img src="/Resources/Images/Mock Images/fightclub.jpeg" alt="">
-                <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                
-                </p>
-            </div>
-            <div class="news-container">
-                <img src="/Resources/Images/Mock Images/fightclub.jpeg" alt="">
-                <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                
-                </p>
-            </div>
-            <div class="news-container">
-                <img src="/Resources/Images/Mock Images/fightclub.jpeg" alt="">
-                <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                
-                </p>
-            </div>
-
         </div>
 
-<!---------------------------------News Feed Frame Ends-------------------------------------->
+        <div class="card">
+            <img src="../Resources/Images/MoviesList/starwar.jpeg">
+            <div class="info">
+                <h1>Star Wars (2018)</h1>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Quod perspiciatis expedita error! Repellendus animi quod est accusamus 
+                    laborum optio quaerat repudiandae harum, libero voluptas dolores iure 
+                    accusantium distinctio sequi doloribus.
+                </p>
+                <a href="#" class="btn">Explore</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="../Resources/Images/MoviesList/spiderman.jpg">
+            <div class="info">
+                <h1>Spider-Man (2022)</h1>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Quod perspiciatis expedita error! Repellendus animi quod est accusamus 
+                    laborum optio quaerat repudiandae harum, libero voluptas dolores iure 
+                    accusantium distinctio sequi doloribus.
+                </p>
+                <a href="#" class="btn">Explore</a>
+            </div>
+        </div>
+        </div>
+
+        <!--Class End-->
+
+        <!--Class Two-->
+
+        <h1>Adventure</h1>
+        <div class="vl">
+            <div class="card">
+                <img src="../Resources/Images/MoviesList/interstellar.jpg">
+                <div class="info">
+                    <h1>Interstellar (2014)</h1>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Quod perspiciatis expedita error! Repellendus animi quod est accusamus 
+                        laborum optio quaerat repudiandae harum, libero voluptas dolores iure 
+                        accusantium distinctio sequi doloribus.
+                    </p>
+                    <a href="#" class="btn">Explore</a>
+                </div>
+            </div>
+    
+            <div class="card">
+                <img src="../Resources/Images/MoviesList/darkknight.jpeg">
+                <div class="info">
+                    <h1>The Dark Knight (2008)</h1>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Quod perspiciatis expedita error! Repellendus animi quod est accusamus 
+                        laborum optio quaerat repudiandae harum, libero voluptas dolores iure 
+                        accusantium distinctio sequi doloribus.
+                    </p>
+                    <a href="#" class="btn">Explore</a>
+                </div>
+            </div>
+    
+            <div class="card">
+                <img src="../Resources/Images/MoviesList/inception.jpeg">
+                <div class="info">
+                    <h1>Inception (2010)</h1>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Quod perspiciatis expedita error! Repellendus animi quod est accusamus 
+                        laborum optio quaerat repudiandae harum, libero voluptas dolores iure 
+                        accusantium distinctio sequi doloribus.
+                    </p>
+                    <a href="#" class="btn">Explore</a>
+                </div>
+            </div>
+
+            <div class="spacing"></div>
+
+            <div class="card">
+                <img src="../Resources/Images/MoviesList/TLOTR.jpeg">
+                <div class="info">
+                    <h1>The Lord Of The Rings</h1>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Quod perspiciatis expedita error! Repellendus animi quod est accusamus 
+                        laborum optio quaerat repudiandae harum, libero voluptas dolores iure 
+                        accusantium distinctio sequi doloribus.
+                    </p>
+                    <a href="#" class="btn">Explore</a>
+                </div>
+            </div>
+            </div>
 
     </div>
-<!---------------------------------First Container Ends-------------------------------------->
+</div>
+<!-- ----------------------------------Movie List Ends-----------------------------------------> 
+
 
 <!---------------------------------Footer---------------------------------------------------->                       
 <footer class="footer">

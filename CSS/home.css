@@ -1,14 +1,5 @@
-@font-face {
-    font-family: DancingScript;
-    src: url(/Resources/Fonts/Dancing_Script/static/DancingScript-Regular.ttf);
-}
-@font-face {
-    font-family: Lobster;
-    src: url(/Resources/Fonts/Lobster/Lobster-Regular.ttf);
-}
-@import url(//fonts.googleapis.com/css?family=Lato:300:400);
 
-/* /////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
 /* --------------------------------------------------------Waves-------------------------------------------------------------- */
 
 .front-page {
@@ -16,13 +7,21 @@
   text-align:center;
   background: linear-gradient(60deg, rgba(8,9,10,1) 80%, rgba(8,9,10,1) 20%);
   color:rgb(247,247,242);
+  width: 100%;
+  height: 800px;
 }
-.front-logo {
-  width:50px;
-  fill:white;
-  padding-right:15px;
-  display:inline-block;
-  vertical-align: middle;
+.front-paral{
+  /* The image used */
+  background-image: url("../Resources/Bg/Home\ Page\ Background.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .inner-header {
@@ -30,6 +29,16 @@
   width:100%;
   margin: 0;
   padding: 0;
+  
+}
+.inner-header h1 pre{
+  color: rgba(247,247,242, 1);
+  font-size: 40px;
+  font-family: DancingScript;
+}
+
+.front-head-bg{
+  background: linear-gradient( rgba(221,4,38,0.6) 20%, rgba(8,9,10,0.5) 80%);
 }
 
 .flex { /*Flexbox for containers*/
@@ -39,10 +48,16 @@
   text-align: center;
 }
 
+.waves-container{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
 .waves {
   position:relative;
   width: 100%;
-  height: 40vh;
+  height: 60vh;
   margin-bottom:-7px; /*Fix for safari gap*/
   min-height:100px;
   max-height:200px;
@@ -98,152 +113,138 @@
 
 .heading h1
 {
-    color: grey;
+    color:rgba(247,247,242, 1);
     font-family: Lobster;
-    font-size: 30px;
+    font-size: 50px;
     font-style: italic;
     text-align: center;
-}
-.first-box
-{
-    border: solid 2px white;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
+    padding-bottom: 50px;
 }
 
-.partition
-{
-    border: 4px solid rgba(221,4,38, 1);
-    border-radius: 50%;
-    height: 400px;
-    align-self: center;
+/* /--------------------------------------------Slider Animation Starts-----------------------------------/ */
+* {box-sizing:border-box}
+#slider-body{
+  height: 1000px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
-/* .partition :hover
-{
-    box-shadow: inset rgba(221,4,38, 1);
-} */
+.slider-paral{
+  /* The image used */
+  background-image: url("../Resources/Bg/Home-Page-Playlist-bg.jpg");
 
-.slider-frame img
-{
-    width: 700px;
-    height: 600px;
-    padding-left: 50px;
-    padding-right: 50px;
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.slider-frame
-{
-    border-radius: 2%;
-    border: solid 2px white;
-    overflow: hidden;
-    width: 800px;
-    height: 600px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
-
-    
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  max-height: 800px;
+  position: relative;
+  margin: auto;
+  box-shadow: rgba(221,4,38, 1) 0px 1px 1px 0px inset, rgba(221,4,38, 0.25) 0px 50px 100px -20px, rgba(221,4,38, 0.3) 0px 30px 60px -30px;
 }
-
-@-webkit-keyframes slider_animation
-{
-    0%{right: 0px;}
-    10%{right: 0px;}
-    30%{right: 800px;}
-    50%{right: 1600px;}
-    70%{right: 800px;}
-    90%{right: 0px;}
-    100%{right: 0px;}
-}
-
-.slide-images
-{
-    display: flex;
-    flex-direction: row;
-    width: 2400px;
-    height: 400px;
-    margin: 0 0 0 -1000;
+.mySlides-inner-frame{
     position: relative;
-    -webkit-animation-name: slider_animation;
-    -webkit-animation-duration: 25s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    -webkit-animation-play-state: running;
-    
+    max-width: 100%;
+    width: 100%;
+    height: 600px;
+    max-height: 100%;
+}
+.slideshow-container .mySlides-inner-frame img{
+    width: 100%;
+    height: 100%;
+
 }
 
-.img-container
-{
-    height: 800px;
-    width: 800px;
-    position: relative;
-    float: bottom;
+/* Hide the images by default */
+.mySlides {
+  display: none;
 }
 
-.slider-frame:hover 
-{
-    color: rgba(221,4,38, 1);
-    border-radius: 5px;
-    transition: 2s;
-    transform: scale(1.05);
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(221,4,38, 1);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 /* /--------------------------------------------Slider Animation Ends-----------------------------------/ */
-
-
-
-
-
-
-
-/* /--------------------------------------------News Frame starts-------------------------/ */
-
-#news-feed-frame
-{
-    display: grid;
-    grid-template-columns: "news-feed news-feed news-feed news-feed";
-    width: 300px;
-    height: 500px;
-    margin: 40px 20px 40px 350px;
-    overflow: auto;
-    /* border: solid white 2px; */
-    border-radius: 1%;
-}
-
-.news-container img
-{
-    width: 80px;
-    height: 100px ;
-    margin: 10px 10px;
-    border-radius: 10%;
-}
-.news-container p
-{
-    text-overflow: hidden;
-    margin: 10px 10px;
-    font-family: DancingScript;
-    color: rgba(247,247,242, 1);
-}
-.news-container
-{
-    display: flex;
-    flex-direction: row;
-    
-}
-
-/* MODIFICATIONS FOR THE SCROLL BAR IN THE NEWS FEED */
-#news-feed-frame::-webkit-scrollbar 
-{
-    display: none;
-}
-  
-#news-feed-frame
-{
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-/* MODIFICATIONS FOR THE SCROLL BAR IN THE NEWS FEED */  
-
-
-/* /--------------------------------------------News Frame ends-------------------------/ */
