@@ -37,6 +37,7 @@ body{
     display: flex;
     margin-bottom: 70px;
     justify-content: center;
+    margin-left: 40px;
 }
 
 .wrapper .card{
@@ -127,6 +128,7 @@ body{
 @media (max-width: 500px){
     .wrapper .vl{
         flex-direction: column;
+        margin-left: -25px;
     }
     .wrapper .card{
         margin: 20px;
