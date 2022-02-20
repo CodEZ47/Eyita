@@ -125,6 +125,15 @@ body{
     box-shadow: 0 70px 63px -60px #000000;
 }
 
+#list{
+    margin: 30px;
+    width: 130px;
+    height: 40px;
+    border: 0 none;
+    background-color: #b0b0b0;
+}
+
+
 @media (max-width: 500px){
     .wrapper .vl{
         flex-direction: column;
