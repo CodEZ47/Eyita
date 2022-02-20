@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Sign up / Login Form</title>
+  <title>Login</title>
   <link rel="stylesheet" href="/CSS/login.css">
 
 </head>
@@ -11,9 +11,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Sign up login form</title>
-	<link rel="stylesheet" type="text/css" href="slide navbar style.css">
-    <link rel="stylesheet" href="../CSS/watchlist.css">
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+    <link rel="stylesheet" href="../CSS/login.css">
     <link rel="stylesheet" href="../CSS/main.css">
 
 </head>
@@ -21,11 +23,10 @@
 
 	        <!-- -------------------------------Header Begins-------------------------------------->
 		<header>
-			<nav class="nav">
-				<a href="index.html" class="logo">
-					<img src="../Resources/Images/Mock Images/logo.jpg">
-				</a>
-				<ul class="nav-list">
+			<header>
+				<nav class="nav">
+					<a href="index.html" class="header-logo"><img src="../Resources/Images/Logos/Eyita_logo.png" alt="Logo"></a>
+					<ul class="nav-list">
 						
 						<li class="nav-link"><a href="Home Page.html">Home</a></li>
 						<li class="nav-link"><a href="MovieList.html">Movies</a></li>
@@ -37,34 +38,38 @@
 		
 					<span id="toggle"><img src="../Resources/Images/icons/toggle.png"></span>
 				</nav>
+			</header>
 		</header>
 			<!---------------------------------Header Ends--------------------------------------- -->
 
 	<div class="main">  <!--the whole body --> 	
 		<input type="checkbox" id="chk" aria-hidden="true"> <!--the checker place for login -->
 
+		<div class="login">  <!--the layout of the login part -->
+			<form name = "registered" onsubmit="return checkRegistered()">
+				<label for="chk" aria-hidden="true">Login</label>
+				<input type="email" name="email" placeholder="Email" required="" id = "loginemail">
+				<input type="password" name="pswd" placeholder="Password" required="">
+				<button type = "submit">Login</button>                                       
+			</form>
+				<a href="forgot password.html">forgot password?</a>  <!--forgot password link in the login layout --></input>
+		</div>
+
 			<div class="signup"> <!--the signup layout -->
-				<form>
+				<form name="registeration" onsubmit = "return CheckValidation()">
 					<label for="chk" aria-hidden="true">Sign up</label>
 					<input type="text" name="txt" placeholder="User name" required="">
-					<input type="email" name="email" placeholder="Email" required="">
-					<input type="password" name="pswd" placeholder="Password" required="">
-					<button>Sign up</button>
+					<input type="email" name="email" placeholder="Email" required="" id="uemail">
+					<input type="password" name="pswd" placeholder="Password" required="" id="pswd">
+					<button type = "submit">Sign up</button>
 				</form>
                     <button>Sign up with Google</button>  <!--social media buttons -->
                     <button>Sign up with Facebook</button>
 			</div>
 
-			<div class="login">  <!--the layout of the login part -->
-				<form>
-					<label for="chk" aria-hidden="true">Login</label>
-					<input type="email" name="email" placeholder="Email" required="">
-					<input type="password" name="pswd" placeholder="Password" required="">
-					<button>Login</button>                                       
-				</form>
-                    <a href="#">forgot password?</a>  <!--forgot password link in the login layout -->
-			</div>
+			
 	</div>
+	<script src="../Script/login.js"></script>
 </body>
 </html>
 <!-- partial -->
