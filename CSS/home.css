@@ -1,6 +1,6 @@
 
 
-/* --------------------------------------------------------Waves-------------------------------------------------------------- */
+/* --------------------------------------------------------Front Page-------------------------------------------------------------- */
 
 .front-page {
   position:relative;
@@ -12,7 +12,7 @@
 }
 .front-paral{
   /* The image used */
-  background-image: url("../Resources/Images/Bg/Home\ Page\ Background.jpg");
+  background-image: url("../Resources/Images/Bg/Black\ Panther\ bg.jpg");
 
   /* Set a specific height */
   min-height: 500px;
@@ -37,77 +37,12 @@
   font-family: DancingScript;
 }
 
-.front-head-bg{
-  background: linear-gradient( rgba(221,4,38,0.6) 20%, rgba(8,9,10,0.5) 80%);
-}
-
 .flex { /*Flexbox for containers*/
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-
-.waves-container{
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-}
-
-.waves {
-  position:relative;
-  width: 100%;
-  height: 60vh;
-  margin-bottom:-7px; /*Fix for safari gap*/
-  min-height:100px;
-  max-height:200px;
-}
-
-.content {
-  position:relative;
-  height:20vh;
-  text-align:center;
-  background-color: rgba(99,112,116,1);
-}
-
-/* Animation */
-
-.parallax > use {
-  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
-}
-.parallax > use:nth-child(1) {
-  animation-delay: -2s;
-  animation-duration: 7s;
-}
-.parallax > use:nth-child(2) {
-  animation-delay: -3s;
-  animation-duration: 10s;
-}
-.parallax > use:nth-child(3) {
-  animation-delay: -4s;
-  animation-duration: 13s;
-}
-.parallax > use:nth-child(4) {
-  animation-delay: -5s;
-  animation-duration: 20s;
-}
-@keyframes move-forever {
-  0% {
-   transform: translate3d(-90px,0,0);
-  }
-  100% { 
-    transform: translate3d(85px,0,0);
-  }
-}
-
-
-/* --------------------------------------------------------Waves End-------------------------------------------------------------- */
-
-
-
-
-
-
 
 /* --------------------------------------------------------First Partition-------------------------------------------------------------- */
 
@@ -130,7 +65,7 @@
 }
 .slider-paral{
   /* The image used */
-  background-image: url("../Resources/Images/Bg/2-28515_black-and-red-wallpapers-hd-cool-backgrounds-red.jpg");
+  background-image: url("../Resources/Images/Bg/cinema_bg.jpg");
 
   /* Set a specific height */
   min-height: 500px;
@@ -143,7 +78,7 @@
 }
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 800px;
   max-height: 800px;
   position: relative;
   margin: auto;

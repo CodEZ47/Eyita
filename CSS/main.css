@@ -48,13 +48,13 @@ header{
   font-size: 18px;
 }
 
-.nav .logo{
+.nav .header-logo{
   margin-left: 10%;
 }
 
-.nav .logo img{
-  max-width: 60px;
-  max-height: 60px;
+.nav .header-logo img{
+  max-width: 100px;
+  max-height: 100px;
 }
 
 .nav-list{
