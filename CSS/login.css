@@ -10,12 +10,14 @@ body{
 	
 }
 .main{
+	margin-top: 200px;
+	margin-bottom: 100px;
 	width: 350px;
 	height: 600px;
 	overflow: hidden;
-	background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover;
     border-radius: 10px;
 	box-shadow: 5px 20px 50px #000;
+	background: linear-gradient(to bottom, rgba(8,9,10,1), rgba(221,4,38, 1));
 }
 #chk{
 	display: none;
@@ -74,7 +76,21 @@ input{
 	margin-left: 120px;
 	text-decoration: none;
 	color:rgba(247,247,242, 1);
-}	
+}
+
+.body-paral{
+	/* The image used */
+	background-image: url("../Resources/Images/Bg/Home\ Page\ alternate.jpg");
+  
+	/* Set a specific height */
+	min-height: 500px;
+  
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  }
 /* ------------------------------------------Login Part-------------------------------------- */
 
 
