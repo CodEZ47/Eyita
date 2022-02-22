@@ -56,3 +56,33 @@ switch(selectedvalue){
         break;
 }
 }
+
+
+function changes(){
+    const name = document.querySelector('#name');
+    const val = name.value;
+    const titles = document.querySelectorAll('.title');
+    const notfound = document.querySelector('.notfound');
+
+    let arr = new Array();
+
+    for(let i = 0; i<titles.length; i++){
+        if(titles[i].innerHTML.includes(val)){
+            arr.push(i);
+        }
+    }
+    
+    card.forEach(changeIn);
+
+    if(arr.length > 0){
+        for(let i = 0; i<arr.length; i++) {
+            index = arr[i];
+            changeIn(notfound)
+            change(card[index])
+            wrap.forEach(flex);
+        }
+    } else {
+        notfound.innerHTML = "We Couldn't Found a Result For \" " + val + " \" Please Try Again";
+        change(notfound);
+    }
+}
