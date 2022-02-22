@@ -110,13 +110,54 @@ body{
 }
 
 #list{
-    margin: 30px;
+    margin: 40px;
+    margin-right: 60px;
     width: 130px;
     height: 40px;
     border: 0 none;
-    background-color: #b0b0b0;
+    opacity: .4;
+    color: #3b2626;
+    font-weight: bold;
+    font-size: 17px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    float: right;
 }
 
+#list:focus{
+    background-color: #b8b8b8;
+    opacity: 1;
+}
+
+.notfound{
+    background-color: #c9554d;
+    color: #fff;
+    min-width: 300px;
+    max-width: 500px;
+    min-height: 40px;
+    max-height: 80px;
+    font-weight: bold;
+    margin: 0px 40px 40px 40px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: none;
+}
+
+input#name{
+    width: 200px;
+    height: 40px;
+    opacity: .4;
+    border: 1px solid #333;
+    border: 1px solid #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: .4s;
+    margin: 40px;
+}
+
+input#name:focus{
+    width: 400px;
+    opacity: 1;
+    transition: .4s;
+}
 
 @media (max-width: 500px){
     .wrapper .vl{
