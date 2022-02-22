@@ -28,21 +28,28 @@
     </header>
 <div class="spacing"></div>
 
-<select id="list" onchange="getSelectValue();">
-    <option value="all">All</option>
-    <option value="action">Action</option>
-    <option value="comedy">Comedy</option>
-    <option value="drama">Drama</option>
-    <option value="adv">Adventure</option>
-    <option value="horror">Horror</option>
-</select>
 
+    <select id="list" onchange="getSelectValue();">
+        <option value="all">All</option>
+        <option value="action">Action</option>
+        <option value="comedy">Comedy</option>
+        <option value="drama">Drama</option>
+        <option value="adv">Adventure</option>
+        <option value="horror">Horror</option>
+    </select>
+
+ <!-- Search Area -->
+
+    <input type="text" id="name" name="name" onchange="changes()" placeholder="Search.....">
+
+ <!-- end of search area -->
+<div class="notfound"></div>
 <div class="wrapper">
 
     <div class="card action adv">
         <img src="../Resources/Images/MoviesList/dune.jpeg">
         <div class="info">
-            <h1>Dune (2021)</h1>
+            <h1 class="title">Dune (2021)</h1>
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                 Quod perspiciatis expedita error! Repellendus animi quod est accusamus 
@@ -56,7 +63,7 @@
     <div class="card action drama">
         <img src="../Resources/Images/MoviesList/batman1.jpeg">
         <div class="info">
-            <h1>The Batman (2022)</h1>
+            <h1 class="title">The Batman (2022)</h1>
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                 Quod perspiciatis expedita error! Repellendus animi quod est accusamus 
@@ -70,7 +77,7 @@
     <div class="card adv drama action">
         <img src="../Resources/Images/MoviesList/starwar.jpeg">
         <div class="info">
-            <h1>Star Wars (2018)</h1>
+            <h1 class="title">Star Wars (2018)</h1>
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                 Quod perspiciatis expedita error! Repellendus animi quod est accusamus 
@@ -84,7 +91,7 @@
     <div class="card comedy action">
         <img src="../Resources/Images/MoviesList/spiderman.jpg">
         <div class="info">
-            <h1>Spider-Man (2022)</h1>
+            <h1 class="title">Spider-Man (2022)</h1>
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                 Quod perspiciatis expedita error! Repellendus animi quod est accusamus 
@@ -100,7 +107,7 @@
 <div class="card adv drama">
     <img src="../Resources/Images/MoviesList/interstellar.jpg">
     <div class="info">
-        <h1>Interstellar (2014)</h1>
+        <h1 class="title">Interstellar (2014)</h1>
         <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
             Quod perspiciatis expedita error! Repellendus animi quod est accusamus 
@@ -114,7 +121,7 @@
 <div class="card action horror">
     <img src="../Resources/Images/MoviesList/darkknight.jpeg">
     <div class="info">
-        <h1>The Dark Knight (2008)</h1>
+        <h1 class="title">The Dark Knight (2008)</h1>
         <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
             Quod perspiciatis expedita error! Repellendus animi quod est accusamus 
@@ -128,7 +135,7 @@
 <div class="card horror drama">
     <img src="../Resources/Images/MoviesList/inception.jpeg">
     <div class="info">
-        <h1>Inception (2010)</h1>
+        <h1 class="title">Inception (2010)</h1>
         <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
             Quod perspiciatis expedita error! Repellendus animi quod est accusamus 
@@ -144,7 +151,7 @@
 <div class="card adv drama horror">
     <img src="../Resources/Images/MoviesList/TLOTR.jpeg">
     <div class="info">
-        <h1>The Lord Of The Rings</h1>
+        <h1 class="title">The Lord Of The Rings</h1>
         <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
             Quod perspiciatis expedita error! Repellendus animi quod est accusamus 
