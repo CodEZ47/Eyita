@@ -13,15 +13,20 @@
         } else {
             $username = $_POST['username'];
             $password = $_POST['password'];
-            $passwordInc = md5($password);
 
-            $sqlLogin = "SELECT * FROM users WHERE username = '$username' AND password = '$passwordInc' AND status = 0 LIMIT 1";
+            $sqlLogin = "SELECT * FROM users WHERE username = '$username' AND status = 0 LIMIT 1";
             $result = mysqli_query($conn, $sqlLogin);
 
             if (mysqli_num_rows($result) > 0) {
                 $data = mysqli_fetch_assoc($result);
-                $_SESSION['data'] = $data;
-                header("Location: moviesList.php");
+                $hashedPassword = $data['password'];
+
+                if (password_verify($password, $hashedPassword)) {
+                    $_SESSION['data'] = $data;
+                    header("Location: moviesList.php");
+                } else {
+                    $loginFail = "<span style='color: red'>Incorrect Username or Password</span><br>";
+                }
             } else {
                 $loginFail = "<span style='color: red'>Incorrect Username, Password, or Account Suspended</span><br>";
             }

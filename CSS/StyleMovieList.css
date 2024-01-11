@@ -16,8 +16,8 @@ body{
 .wrapper{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
+    margin-left: 60px;
 }
 
 .card{
@@ -34,7 +34,6 @@ body{
 
 .item:nth-child(4n) {
     width: 100%;
-    
   }
 
 .wrapper .card:hover{
@@ -42,7 +41,7 @@ body{
 }
 
 
-.wrapper .card:before{
+.wrapper .card::before{
     content: "";
     position: absolute;
     top: 0;
@@ -56,7 +55,7 @@ body{
     opacity: 0;
 }
 
-.wrapper .card:hover:before{
+.wrapper .card:hover::before{
     opacity: 1;
 }
 
@@ -109,24 +108,6 @@ body{
     box-shadow: 0 70px 63px -60px #000000;
 }
 
-#list{
-    margin: 40px;
-    margin-right: 60px;
-    width: 130px;
-    height: 40px;
-    border: 0 none;
-    opacity: .4;
-    color: #3b2626;
-    font-weight: bold;
-    font-size: 17px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    float: right;
-}
-
-#list:focus{
-    background-color: #b8b8b8;
-    opacity: 1;
-}
 
 .notfound{
     background-color: #c9554d;
@@ -166,5 +147,10 @@ input#name:focus{
     }
     .wrapper .card{
         margin: 20px;
+    }
+    #list{
+        float: left;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 }

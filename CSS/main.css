@@ -185,7 +185,7 @@ body
 
 /*----------------------------------------------------------------Footer Begins------------------------------------------------------------*/
 
-*, *:before, *:after {
+*{
 box-sizing: border-box;
 }
 .footer {
@@ -261,6 +261,72 @@ color: #999;
   width: 200px;
   height: 200px;
 }
+
+.get_img {
+  width: 288px;
+  height: 360px;
+  margin: 5px;
+}
+
+.get_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.get_img .info {
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(-50px);
+    margin-left: 5px;
+    transition: 0.5s all;
+}
+
+.get_img:hover .info {
+  opacity: 1;
+}
+
+.get_img input[type=file] {
+  
+}
+
+.addComment {
+  background-color: #fff;
+  width: 500px;
+  height: 300px;
+  margin: 15px;
+}
+
+.addComment textarea {
+  margin: 10px;
+  width: 350px;
+  height: 200px;
+}
+
+.addComment button {
+  margin: 10px;
+  border: 0 none;
+  width: 150px;
+  height: 40px;
+  background-color: red;
+  color: #fff;
+}
+
+.getcomment {
+  background-color: #fff;
+  width: 500px;
+  margin: 15px;
+  padding: 5px;
+}
+
+.eachcomment {
+  background-color: #f3f3f3;
+  width: 95%;
+  padding: 5px;
+  margin: 10px;
+}
+
 
 @media screen and (min-width: 600px) {
 .r-footer > * {
